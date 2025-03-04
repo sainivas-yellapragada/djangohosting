@@ -76,18 +76,17 @@ WSGI_APPLICATION = 'Contactlist.wsgi.application'
 
 DATABASES = {
     'default': {
-        'ENGINE': 'mysql.connector.mysql',  # Change this!
+        'ENGINE': 'django.db.backends.mysql',  # Keep this as is
         'NAME': 'railway',
         'USER': 'root',
         'PASSWORD': 'uzBwapxGjcYKlONEsfGejehiNKMWguzY',
         'HOST': 'interchange.proxy.rlwy.net',
         'PORT': '41292',
         'OPTIONS': {
-            'autocommit': True,
+            'autocommit': True,  # Important for MySQL connections
         },
     }
 }
-
 
 
 # Password validation
