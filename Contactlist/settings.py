@@ -77,11 +77,11 @@ WSGI_APPLICATION = 'Contactlist.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.mysql',
-        'NAME': 'contactapp',
+        'NAME': 'railway',
         'USER': 'root',
-        'PASSWORD': 'root',
-        'HOST': 'localhost',
-        'PORT': '3306',
+        'PASSWORD': 'uzBwapxGjcYKlONEsfGejehiNKMWguzY',
+        'HOST': 'interchange.proxy.rlwy.net',
+        'PORT': '41292',
     }
 }
 
