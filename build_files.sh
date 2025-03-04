@@ -1,13 +1,17 @@
 #!/bin/bash
 
-# Upgrade pip to avoid issues
+echo "🔹 Creating a virtual environment..."
+python3 -m venv venv  
+source venv/bin/activate  
+
+echo "🔹 Upgrading pip..."
 pip install --upgrade pip  
 
-# Ensure all dependencies are installed
+echo "🔹 Installing dependencies..."
 pip install -r requirements.txt  
 
-# Debugging step: Print installed packages
+echo "🔹 Checking installed packages..."
 pip freeze  
 
-# Run Django static file collection
+echo "🔹 Collecting static files..."
 python3 manage.py collectstatic --noinput  
