@@ -1,23 +1,16 @@
 {
     "version": 2,
     "builds": [
-      {
-        "src": "Contactlist/wsgi.py",
-        "use": "@vercel/python",
-        "config": { "runtime": "python3.12" }
-      },
-      {
-        "src": "build_files.sh",
-        "use": "@vercel/static-build",
-        "config": { "distDir": "staticfiles_build" }
-      }
+        {
+            "src": "Contactlist/wsgi.py",
+            "use": "@vercel/python",
+            "config": { "runtime": "python3.12" }
+        }
     ],
     "routes": [
-      { "src": "/static/(.*)", "dest": "/static/$1" },
-      { "src": "/(.*)", "dest": "Contactlist/wsgi.py" }
+        { "src": "/(.*)", "dest": "Contactlist/wsgi.py" }
     ],
     "env": {
-      "PYTHONPATH": "/vercel/path0"
+        "PYTHONPATH": "/vercel/path0"
     }
-  }
-  
+}
