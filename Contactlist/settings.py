@@ -76,7 +76,7 @@ WSGI_APPLICATION = 'Contactlist.wsgi.application'
 
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.mysql',  # Keep this as is
+        'ENGINE': 'django.db.backends.django',  # Keep this as is
         'NAME': 'railway',
         'USER': 'root',
         'PASSWORD': 'uzBwapxGjcYKlONEsfGejehiNKMWguzY',
