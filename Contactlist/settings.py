@@ -76,12 +76,15 @@ WSGI_APPLICATION = 'Contactlist.wsgi.application'
 
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.mysql',
+        'ENGINE': 'django.db.backends.mysql',  # Keep this as is
         'NAME': 'railway',
         'USER': 'root',
         'PASSWORD': 'uzBwapxGjcYKlONEsfGejehiNKMWguzY',
         'HOST': 'interchange.proxy.rlwy.net',
         'PORT': '41292',
+        'OPTIONS': {
+            'autocommit': True,  # Important for MySQL connections
+        },
     }
 }
 
